@@ -5,7 +5,8 @@ let User=require('./User')
 let mongoose= require('mongoose')
 let Upload =require('./Upload')
 let Comment = require('./Comment')
-mongoose.connect('mongodb+srv://anjali19:anjali2006@cluster0.lkgew0o.mongodb.net/Project-0').then(()=>{
+require('dotenv').config()
+mongoose.connect(process.env.Mongo_URL).then(()=>{
     console.log("db.....");
     
 })
