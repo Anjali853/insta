@@ -21,7 +21,7 @@ const SignUp = () => {
     try {
       console.log("DATA GOING TO BACKEND:", input);
 
-      const res = await axios.post("http://localhost:4000/signUp", input);
+      const res = await axios.post("https://insta-1-v1mq.onrender.com/signUp", input);
 
       console.log("SERVER RESPONSE →", res.data);
 

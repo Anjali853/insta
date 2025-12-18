@@ -125,7 +125,7 @@ const Login = () => {
 
     try {
       //  Backend ke port & route ke hisaab se URL change kiya
-      const res = await axios.post("http://localhost:4000/login", formData);
+      const res = await axios.post("https://insta-1-v1mq.onrender.com/login", formData);
 
       if (res.data.token) {
         // ✅ Abhi ke liye simple localStorage use kar rahe hain

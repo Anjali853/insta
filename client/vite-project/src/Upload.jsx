@@ -32,24 +32,7 @@ const Upload = () => {
     }
 
     try {
-      setLoading(true);
-
-      // const path = `insta_images/${Date.now()}_${img.name}`;
-
-      // const { error } = await supabase.storage
-      //   .from("insta")
-      //   .upload(path, img);
-
-      // if (error) throw error;
-
-      // const imgUrl = `${supabaseUrl}/storage/v1/object/public/insta/${path}`;
-
-      // await axios.post(
-      //   "http://localhost:4000/upload",
-      //   { imgUrl },
-      //   { headers: { Authorization: token } }
-      // );
-
+      
       const path = `insta_images/${Date.now()}_${img.name}`;
 
 await supabase.storage.from("insta").upload(path, img);
@@ -58,7 +41,7 @@ const imgUrl =
   `${supabaseUrl}/storage/v1/object/public/insta/${path}`;
 
 await axios.post(
-  "http://localhost:4000/upload",
+  "https://insta-1-v1mq.onrender.com/upload",
   { imgUrl },
   { headers: { Authorization: token } }
 );
