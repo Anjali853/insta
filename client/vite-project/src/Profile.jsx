@@ -25,6 +25,7 @@ const Profile = () => {
     <div className="bg-black min-h-screen flex text-white">
       {/* <Sidebar /> */}
 
+
       {/* MAIN CONTENT */}
       <div className="flex-1 ml-[245px] px-8 py-10">
 
